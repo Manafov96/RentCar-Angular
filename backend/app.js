@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://selvi:selvi1677@cluster0.bctly.mongodb.net/rentCar?retryWrites=true&w=majority';
+const uri = 'enter url';
 
 mongoose.connect(uri, { useNewUrlParser: true }).then( () => {
     console.log('Connected')
