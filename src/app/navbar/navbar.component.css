@@ -1,0 +1,15 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+a:hover {
+    color: red;
+}
+
+.mat-sidenav-container {
+    height: 93vh;
+}
+
+mat-nav-list {
+    padding-top: 25px;   
+}

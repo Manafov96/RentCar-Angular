@@ -1,0 +1,21 @@
+<div style="height: calc(100vh - 50px); overflow: hidden;">
+    <mat-card>
+        <mat-card-title>
+            Register
+        </mat-card-title>
+        <form (submit) = "onRegister(registerform)" #registerform = "ngForm">
+
+            <mat-form-field>
+                <input matInput placeholder="Email" name="email" required email #emailInput="ngModel" ngModel>
+                <mat-error *ngIf="emailInput.invalid">Please give a valid email</mat-error>
+            </mat-form-field> 
+
+            <mat-form-field>
+                <input type="password" matInput placeholder="Password" name="password" ngModel>
+            </mat-form-field> 
+
+            <button mat-raised-button color="primary" type="submit">Register</button>
+
+        </form>
+    </mat-card>
+</div>   
